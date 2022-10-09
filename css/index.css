@@ -19,8 +19,13 @@ a:hover {
   margin: 0 auto;
 }
 .header {
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
+  position: fixed;
+  max-width: 1440px;
+  top: 0;
+  background-color: white;
+  align-items: center;
 }
 .header-container {
   max-width: 1200px;
@@ -57,7 +62,7 @@ a:hover {
 }
 .language-mode a,
 .nav-list a,
-.side-bar-nav-item a {
+.aside-bar-nav-item a {
   text-decoration: none;
 }
 .nav {
@@ -82,33 +87,36 @@ a:hover {
 .nav-list:last-child::after {
   content: "";
 }
-
 .main-container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 70px;
+  padding-top: 150px;
   display: flex;
   flex-wrap: wrap;
 }
-.side-bar {
+.aside-bar {
   width: 35%;
   padding-right: 30px;
+  position: relative;
 }
 .content {
   width: 65%;
+  position: relative;
 }
-.side-bar-nav {
+.aside-bar-nav {
   max-width: 385px;
   padding: 10px;
+  position: sticky;
+  top: 80px;
 }
-.side-bar-nav-list {
+.aside-bar-nav-list {
   list-style: none;
   padding-inline-start: 0;
   margin-block-start: 0;
   margin-block-end: 0;
 }
-.side-bar-nav-item {
+.aside-bar-nav-item {
   padding-bottom: 70px;
   text-transform: uppercase;
   font-family: "francois_one";
@@ -119,7 +127,7 @@ a:hover {
   text-align: left;
   color: #000000;
 }
-.side-bar-nav-item:last-child {
+.aside-bar-nav-item:last-child {
   padding-bottom: 0;
 }
 .line-divider {
@@ -176,4 +184,13 @@ mark {
   line-height: 48px;
   letter-spacing: 0em;
   background-color: #c9c9c9;
+}
+
+.background-img {
+  display: inline-block;
+  width: 760px;
+  max-width: 100%;
+  position: fixed;
+  z-index: -1;
+  margin-left: 277px;
 }
