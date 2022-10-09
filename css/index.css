@@ -1,0 +1,179 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  text-align: left;
+  color: #000000;
+}
+a {
+  color: #000000;
+}
+a:hover {
+  color: #000000;
+  cursor: pointer;
+}
+.body-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.header {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.ref-wrapper {
+  width: 35%;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+.logo-container {
+  padding: 0;
+  margin: 0;
+  width: 65%;
+  display: flex;
+  padding: 13px 0;
+  justify-content: flex-end;
+}
+.language-mode {
+  font-family: "tourney";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 18px;
+}
+.language-mode a,
+.nav-list a,
+.side-bar-nav-item a {
+  text-decoration: none;
+}
+.nav {
+  list-style: none;
+  display: inline-block;
+  padding-inline-start: 0;
+}
+.nav-list {
+  display: inline;
+  text-transform: uppercase;
+  font-family: "staatliches";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  padding: 0;
+}
+.nav-list::after {
+  content: "/";
+  padding: 13px;
+}
+.nav-list:last-child::after {
+  content: "";
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.side-bar {
+  width: 35%;
+  padding-right: 30px;
+}
+.content {
+  width: 65%;
+}
+.side-bar-nav {
+  max-width: 385px;
+  padding: 10px;
+}
+.side-bar-nav-list {
+  list-style: none;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.side-bar-nav-item {
+  padding-bottom: 70px;
+  text-transform: uppercase;
+  font-family: "francois_one";
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #000000;
+}
+.side-bar-nav-item:last-child {
+  padding-bottom: 0;
+}
+.line-divider {
+  max-width: 100px;
+  display: block;
+  border-top: 8px solid #000000;
+  margin-bottom: 20px;
+}
+h2 {
+  font-family: "francois_one";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding-right: 10px;
+  margin: 0;
+  margin-block: 0;
+  display: inline;
+}
+sup {
+  display: inline;
+  font-family: "farro";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  vertical-align: super;
+}
+.paragraphs-wrapper {
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+.text-input-section .paragraphs-wrapper {
+  padding-bottom: 90px;
+}
+p {
+  font-family: "pt_sans";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: justify;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-bottom: 40px;
+}
+mark {
+  font-family: "hind";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  background-color: #c9c9c9;
+}
