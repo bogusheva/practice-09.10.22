@@ -1,0 +1,79 @@
+.header {
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  max-width: 1440px;
+  top: 0;
+  background-color: white;
+  align-items: center;
+
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .ref-wrapper {
+      width: 35%;
+      margin: 0;
+      padding: 0;
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+
+      .nav {
+        list-style: none;
+        display: inline-block;
+        padding-inline-start: 0;
+
+        .nav-list {
+          display: inline;
+          text-transform: uppercase;
+          font-family: "staatliches";
+          font-size: 22px;
+          font-weight: 400;
+          line-height: 28px;
+          letter-spacing: 0.03em;
+          padding: 0;
+
+          &::after {
+            content: "/";
+            padding: 13px;
+          }
+
+          &:last-child::after {
+            content: "";
+          }
+
+          & a {
+            text-decoration: none;
+          }
+        }
+      }
+
+      .language-mode {
+        font-family: "tourney";
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: 0.06em;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 18px;
+        & a {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .logo-container {
+      padding: 0;
+      margin: 0;
+      width: 65%;
+      display: flex;
+      padding: 13px 0;
+      justify-content: flex-end;
+    }
+  }
+}

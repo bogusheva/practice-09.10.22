@@ -1,0 +1,32 @@
+.content {
+  width: 65%;
+  position: relative;
+
+  .background-img {
+    display: inline-block;
+    width: 760px;
+    max-width: 100%;
+    position: fixed;
+    z-index: -1;
+    margin-left: 277px;
+  }
+
+  section {
+    .line-divider {
+      max-width: 100px;
+      display: block;
+      border-top: 8px solid #000000;
+      margin-bottom: 20px;
+    }
+
+    .paragraphs-wrapper {
+      padding-top: 40px;
+      padding-bottom: 70px;
+    }
+  }
+  .text-input-section {
+    .paragraphs-wrapper {
+      padding-bottom: 90px;
+    }
+  }
+}
